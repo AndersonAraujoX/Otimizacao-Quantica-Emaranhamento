@@ -38,28 +38,3 @@ O código no notebook realiza os seguintes passos:
     pip install pennylane qutip matplotlib seaborn
     ```
 2.  **Execute o Notebook:** Abra e execute o arquivo `Otimização_de_emaranhamento.ipynb` em um ambiente Jupyter.
-
-## Resultados
-
-O notebook demonstra que, para ambas as funções de custo, o algoritmo de otimização converge com sucesso, reduzindo o valor da perda a cada época.
-
-![Loss vs Epochs para a primeira função de custo](https://i.imgur.com/k6lP0W3.png)
-*Gráfico da função de custo vs. épocas para a primeira implementação.*
-
-![Loss vs Epochs para a segunda função de custo](https://i.imgur.com/G20c2bS.png)
-*Gráfico da função de custo vs. épocas para a segunda implementação.*
-
-A matriz de densidade do estado final, gerada com os parâmetros otimizados, aproxima-se com alta fidelidade da matriz de densidade de um estado de Bell puro:
-
-$$
-\rho_{Bell} = 
-\begin{pmatrix} 
-0.5 & 0 & 0 & 0.5 \\ 
-0 & 0 & 0 & 0 \\ 
-0 & 0 & 0 & 0 \\ 
-0.5 & 0 & 0 & 0.5 
-\end{pmatrix}
-$$
-
-![Matriz de Densidade Final](https://i.imgur.com/w8YdD9W.png)
-*Visualização da matriz de densidade do estado gerado após a otimização, mostrando uma forte semelhança com o estado de Bell.*
